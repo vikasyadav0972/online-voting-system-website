@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<link href="css/user_styles.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/user.js">
+</script>
+<title>Online election</title>
+</head>
+<body>
+
+	<style>
+body{
+background-image:url("wallhaven-p236me.jpg");
+background-repeat:no-repeat;
+background-position:left top;
+background-attachment:fixed;
+background-size:1385px;
+}
+</style>
+
+	<center><b><font color = "brown" size="6">Online Election System</font></b></center><br><br>
+<div id="page">
+<div id="header">
+<h1>Condidate Registration Form </h1>
+<div class="news"><marquee behavior="alternate">New polls are up and running. But they will not be up forever! Just Login and then go to Current Polls to vote for your favourate candidates. </marquee></div>
+</div>
+
+<div id="container">
+<?php
+require('connection.php');
+{
+
+<center><h3>Register an account by filling in the needed information below:</h3></center><br><br>
+ <form>
+ 	 '<table align="center"><tr><td>
+<form action="/server_name.php">
+Fist name:<br>
+<input type="text" placeholder="first name" required><br>
+Last name:<br>
+<input type="text"  placeholder="last name" required><br>
+Email:<br>
+<input type="text"  placeholder="Email id" required><br>
+mobile No:<br>
+<input type="text"  placeholder="mobile No" maxlength="10" required><br>
+<input type="text"  placeholder="user id" maxlength="8" required><br>
+password:<br>
+<input type="password" placeholder="Password" minlength="8" required>
+  <input type="password" placeholder="Re Password" minlength="8" required><br>
+<input type="radio" name="Gender" value="male">male<br>
+<input type="radio" name="Gender" value="female">female<br>
+accept all term and condition<br>
+<input type='checkbox' id='form-switch'><br>
+<input type="submit"><br>
+
+</form>
+</div> 
+
+ 
+ <head>
+   <title>e-voting system for ellection</title>
+</head>
+<body bgcolor="lightgreen">
+	<center><b><font color = "dark red" size="6">Registered condidates login here.....</font></b></center><br><br>
+<fieldset>
+<legend> E-Voting System
+</legend>
+<table boder="1">
+<tr>
+ <td>First Name</td><td><input type="text">
+</tr>
+<tr>
+ <td>Last Name</td><td><input type="text"><td>
+ <td>Password</td><td><input type="Password" minlength="8" required>
+
+</tr>
+<tr>
+ <td>Id number</td><td><input type="text">
+</tr>
+<tr>
+<td> Candidate Name</td><td><select>
+                       <option>Vikas</option>
+                       <option>Raj</option>
+                       <option>chaitu</option>
+</tr>
+<td>Party</td><td><select>
+                       <option>BVP</option>
+                       <option>sp</option>
+                       <option>HOp</option> 
+</tr>
+<tr><td>Sex</td><td><input type="radio" name="e">Male<input type="radio" name="e">Female</td></tr><br><br>
+</td>
+</tr>
+</table>
+<input type="submit" value="Submit">
+</fieldset>
+
+
+
+
+</body>
+</html>
